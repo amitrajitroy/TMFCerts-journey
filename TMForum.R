@@ -1,4 +1,4 @@
-setwd("C:/GitHub/TMFCerts-journey")
+setwd()
 library(dplyr)
 library(ggplot2)
 library(lubridate)
@@ -69,10 +69,10 @@ tmf %>% filter(exam=="Y") %>%
            label="(Source:TMForum Training History)",size=2.5) -> myplot
 
 
-img_bdm <- image_read("BDM.png")
-img_pdm <- image_read("PDM.png")
-img_aidm <- image_read("AIDM.png")
-img_ftm <- image_read("FTM.png")
+img_bdm <- image_read("data/BDM.png")
+img_pdm <- image_read("data/PDM.png")
+img_aidm <- image_read("data/AIDM.png")
+img_ftm <- image_read("data/FTM.png")
 
 myplot_2 <- 
   ggdraw() +
