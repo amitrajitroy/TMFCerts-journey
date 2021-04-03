@@ -1,9 +1,10 @@
+setwd("C:/GitHub/TMFCerts-journey")
 library(dplyr)
 library(ggplot2)
 library(lubridate)
 library(magick)
-setwd("C:/Projects/R/TMFoumTraining")
-tmf <- read.csv("tmforum.csv")
+
+tmf <- read.csv("data/tmforum.csv")
 
 library(stringr)
 tmf %>% mutate(Enroll_Date=str_trim(Enroll_Date, side=c("both")),
